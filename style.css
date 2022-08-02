@@ -1,0 +1,33 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    width: 100vw;
+    min-height: 100vh;
+    background-color: rgb(40, 139, 182);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.calculator-container{
+    width: 20rem;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(5, 1fr);
+    grid-template-areas: 
+    "a a a a";
+    gap: .5rem;
+}
+
+.results-window{
+    text-align: right;
+    width: 100%;
+    padding: 1rem 2rem;
+    background: white;
+    font-size: 30px;
+    grid-area: a;
+}
